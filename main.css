@@ -1,6 +1,16 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./fonts/Inter.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./fonts/Montserrat.ttf);
+}
+
 html {
     margin: 0px auto;
-    width: 1123px;
+    max-width: 1138px;
     background-color: #F8F8F8;
 }
 
@@ -89,10 +99,13 @@ html {
 /* Headers ^^^*/
 
 .notify {
-
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 35px;
 }
 
-.point {
+.point-1 {
     position: relative;
     width: 212px;
     height: 228px;
@@ -102,7 +115,7 @@ html {
     background: #E9F3ED; 
 }
 
-.dot {
+.point-1 .dot {
     position: absolute;
     left: 8px;
     top: -2px;
@@ -113,7 +126,7 @@ html {
     background: #FF9F9F; 
 }
 
-.top-rectangl {
+.point-1 .top-rectangl {
     width: 212px;
     height: 91px;
     flex-shrink: 0;
@@ -121,41 +134,550 @@ html {
     background: #D7EADD;
 }
 
-.notify__plant {
+.point-1 .point__dl {
+    position: absolute;
+    top: 62px;
+    left: 20px;
+    margin: 0px;
+}
+
+.point-1 .point__dl .point__dt {
+    color: #498553;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.point-1 .point__dl .point__dd {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-left: 0px;
+    margin-top: 37px;
+    padding-right: 58px;
+}
+
+.point-1 .notify__plant {
     position: absolute;
     z-index: 1;
     top: -100px;
     left: 59px;
 }
 
-.plant-face-sick {
+.point-1 .plant-face-sick {
     position: absolute;
     z-index: 2;
     top:25px;
     left:130px;
 }
 
-.snow {
+.point-1 .snow {
     position: absolute;
     z-index: 2;
     top:13px;
     left:158px;
 }
 
-.icons {
+.point-1 .icons {
     position: absolute;
     top: 194px;
     left: 18px;
 }
 
-.battery {
+.point-1 .icons .battery {
     margin-right: 60px;
 }
 
-.fire {
+.point-1 .icons .fire {
     margin-right: 9px;
 }
 
-.sunrise {
+.point-1 .icons .sunrise {
     margin-right: 9px;
+}
+
+.point-2 {
+    position: relative;
+    width: 212px;
+    height: 228px;
+    margin-top: 112px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #E9F3ED; 
+}
+
+.point-2 .dot {
+    position: absolute;
+    left: 8px;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #FF9F9F; 
+}
+
+.point-2 .top-rectangl {
+    width: 212px;
+    height: 91px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 62px 0px;
+    background: #D7EADD;
+}
+
+.point-2 .point__dl {
+    position: absolute;
+    top: 62px;
+    left: 20px;
+    margin: 0px;
+}
+
+.point-2 .point__dl .point__dt {
+    color: #498553;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.point-2 .point__dl .point__dd {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    margin-left: 0px;
+    margin-top: 37px;
+    padding-right: 58px;
+}
+
+.point-2 .notify__plant {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 59px;
+}
+
+.point-2 .plant-face-sick {
+    position: absolute;
+    z-index: 2;
+    top:25px;
+    left:130px;
+}
+
+.point-2 .snow {
+    position: absolute;
+    z-index: 2;
+    top:13px;
+    left:158px;
+}
+
+.point-2 .icons {
+    position: absolute;
+    top: 194px;
+    left: 18px;
+}
+
+.point-2 .icons .battery {
+    margin-right: 60px;
+}
+
+.point-2 .icons .fire {
+    margin-right: 9px;
+}
+
+.point-2 .icons .sunrise {
+    margin-right: 9px;
+}
+
+/* Notify ^^^*/
+
+.pots {
+    
+}
+
+.pots .title {
+    color: #555;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.pots .points {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+    
+}
+
+.pots .points .point-1 {
+    position: relative;
+    width: 554px;
+    height: 216px;
+    flex-shrink: 0;
+    border-radius: 20px 13px 13px 13px;
+    background: #E9F3ED;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.pots .points .point-1 .top {
+    position: absolute;
+    width: 195px;
+    height: 139px;
+    flex-shrink: 0;
+    border-radius: 16px 0px 95px 0px;
+    background: #D7EADD;
+}
+
+.pots .points .point-1 .pots__plant {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: -6px;
+}
+
+.pots .points .point-1 .pots__plant-face{
+    position: absolute;
+    z-index: 2;
+    top: 128px;
+    left: 74px;
+}
+
+.pots .points .point-1 .pots__dl {
+    position: absolute;
+    top:22px;
+    left:212px;
+    margin: 0px;
+}
+
+.pots .points .point-1 .pots__dl .pots__dt {
+    color: #498553;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.pots .points .point-1 .pots__dl .pots__dd-1 {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+    margin-bottom: 7px;
+}
+
+.pots .points .point-1 .pots__dl .pots__dd-2 {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+}
+
+.pots .points .point-1 .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    top: 110px;
+    left: 334px;
+}
+
+.pots .points .point-1 .icons .fire {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;    
+}
+
+.pots .points .point-1 .icons .sunrise {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-1 .icons .drops {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-1 .icons .battery {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-1 .graf {
+    position: absolute;
+    top: 149px;
+    left: 212px;
+    width: 315px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #D7EADD;
+}
+
+.pots .points .point-2 {
+    position: relative;
+    width: 554px;
+    height: 216px;
+    flex-shrink: 0;
+    border-radius: 20px 13px 13px 13px;
+    background: #E9F3ED;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.pots .points .point-2 .top {
+    position: absolute;
+    width: 195px;
+    height: 139px;
+    flex-shrink: 0;
+    border-radius: 16px 0px 95px 0px;
+    background: #D7EADD;
+}
+
+.pots .points .point-2 .pots__plant {
+    position: absolute;
+    z-index: 1;
+    top: 36px;
+    right: 368px;
+}
+
+.pots .points .point-2 .pots__plant-face{
+    position: absolute;
+    z-index: 2;
+    top: 128px;
+    left: 74px;
+}
+
+.pots .points .point-2 .pots__dl {
+    position: absolute;
+    top:22px;
+    left:212px;
+    margin: 0px;
+}
+
+.pots .points .point-2 .pots__dl .pots__dt {
+    color: #498553;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.pots .points .point-2 .pots__dl .pots__dd-1 {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+    margin-bottom: 7px;
+}
+
+.pots .points .point-2 .pots__dl .pots__dd-2 {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+}
+
+.pots .points .point-2 .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    top: 110px;
+    left: 334px;
+}
+
+.pots .points .point-2 .icons .fire {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;    
+}
+
+.pots .points .point-2 .icons .sunrise {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-2 .icons .drops {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-2 .icons .battery {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-2 .graf {
+    position: absolute;
+    top: 149px;
+    left: 212px;
+    width: 315px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #D7EADD;
+}
+
+.pots .points .point-3 {
+    position: relative;
+    width: 554px;
+    height: 216px;
+    flex-shrink: 0;
+    border-radius: 20px 13px 13px 13px;
+    background: #E9F3ED;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.pots .points .point-3 .top {
+    position: absolute;
+    width: 195px;
+    height: 139px;
+    flex-shrink: 0;
+    border-radius: 16px 0px 95px 0px;
+    background: #D7EADD;
+}
+
+.pots .points .point-3 .pots__plant {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: -6px;
+}
+
+.pots .points .point-3 .pots__plant-face{
+    position: absolute;
+    z-index: 2;
+    top: 128px;
+    left: 74px;
+}
+
+.pots .points .point-3 .pots__dl {
+    position: absolute;
+    top:22px;
+    left:212px;
+    margin: 0px;
+}
+
+.pots .points .point-3 .pots__dl .pots__dt {
+    color: #498553;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 7px;
+}
+
+.pots .points .point-3 .pots__dl .pots__dd-1 {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+    margin-bottom: 7px;
+}
+
+.pots .points .point-3 .pots__dl .pots__dd-2 {
+    color: #888;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0px;
+}
+
+.pots .points .point-3 .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    top: 110px;
+    left: 334px;
+}
+
+.pots .points .point-3 .icons .fire {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;    
+}
+
+.pots .points .point-3 .icons .sunrise {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-3 .icons .drops {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-3 .icons .battery {
+    margin: 0px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.pots .points .point-3 .graf {
+    position: absolute;
+    top: 149px;
+    left: 212px;
+    width: 315px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #D7EADD;
 }
