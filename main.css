@@ -819,6 +819,18 @@ html {
 }
 
 @media (max-width: 427px) {
+
+    h2 {
+        width: 135px;
+        height: 17px;
+        flex-shrink: 0;
+        color: #555;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
     .main .notify .point-1 {
         width: 148px;
         height: 149px;
