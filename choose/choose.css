@@ -27,8 +27,9 @@ body {
 aside {
     overflow: auto;
     height: 100dvh;
-    margin: 0px 50px 0px 2vw;
+    margin: 0px 30px 0px 2vw;
     padding-left: 50px;
+    padding-right: 20px;
     direction: rtl;
 }
 
@@ -92,6 +93,10 @@ aside > * {
     height: 216px;
     border-radius: 13px;
     background: #E9F3ED;
+}
+
+.plant-cart:checked {
+    background: #D3E7DB;
 }
 
 .plant-cart .top {
@@ -159,12 +164,52 @@ aside > * {
     
 }
 
+.main__header {
+    position: relative;
+}
+
 .top-green-block {
     width: 469.877px;
     height: 295.143px;
     transform: rotate(-0.262deg);
     border-radius: 0px 20px 175px 0px;
     background: #D7EADD;   
+}
+
+.main__header img {
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    left: -57px;
+
+}
+
+.main__header dl {
+    position: absolute;
+    top: 61px;
+    left: 551px;
+    margin: 0px;
+}
+
+.main__header dt {
+    color: #A1A7A4;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+
+.main__header dd {
+    margin-left: 0px;
+    color: #498553;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
 }
 
 .bottom-white-block {
