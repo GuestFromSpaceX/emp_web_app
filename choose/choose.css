@@ -86,7 +86,9 @@ aside > * {
     margin-top: 26px;
 }
 
+
 .plant-cart {
+    
     position: relative;
     margin-top: 35px;
     width: 569px;
@@ -95,9 +97,23 @@ aside > * {
     background: #E9F3ED;
 }
 
-.plant-cart:checked {
+.plant-cart input[type=radio] {
+display: none;
+}
+
+.plant-cart label{
+    display: block;
+	cursor: pointer;
+    width: 569px;
+    height: 216px;
+    border-radius: 13px;
+}
+
+
+.plant-cart input[type=radio]:checked + label {
     background: #D3E7DB;
 }
+
 
 .plant-cart .top {
     width: 195px;
