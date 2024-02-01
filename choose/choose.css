@@ -67,7 +67,6 @@ aside > * {
 .aside__header input {
     width: 569px;
     height: 57px;
-    flex-shrink: 0;
     border-radius: 21px;
     background: #FEFEFE;    
     box-shadow: 2px 4px 13px 0px rgba(138, 138, 138, 0.25);
@@ -125,7 +124,7 @@ display: none;
     background: #D7EADD;
 }
 
-.plant-cart img {
+.plant-small {
     position: absolute;
     top: 20px;
     left: -6px;
@@ -195,7 +194,16 @@ display: none;
     background: #D7EADD;   
 }
 
-.main__header img {
+.button-back {
+    display: none;
+}
+
+.arrow-left {
+    display: none;
+}
+
+
+.plant-large {
     position: absolute;
     z-index: 1;
     top: 65px;
@@ -276,6 +284,10 @@ display: none;
     gap:20px;
 }
 
+.bottom-white-block .hide-icons{
+    display: none;
+}
+
 .bottom-white-block button {
     position: absolute;
     background-color: #D7EADD;
@@ -296,3 +308,348 @@ display: none;
     line-height: normal;
 }
 
+@media (max-width:1420px) {
+
+    .aside__header input {
+        width: 40vw;
+    }
+
+    .aside__plant-carts {
+        width: 40vw;
+    }
+
+    .plant-cart {
+        width: 40vw;
+    }
+
+    .plant-cart label{
+        width: 40vw;
+    }
+
+    .plant-cart dd {
+        padding: 0px 10px 0px 0px;
+        font-size: 12px;
+    }
+
+    .plant-cart .fire {
+        left: 27vw;
+    }
+    
+    .plant-cart .sunrise {
+        left: 30vw;
+    }
+    
+    .plant-cart .drops {
+        left: 33vw;
+    }
+
+    .main {
+        width: 45vw;
+    }
+
+    .main__header dl {
+        left: 36vw;
+    }
+
+    .plant-large {
+        left: -5vw;
+        width: 37vw;
+    }
+
+    .top-green-block {
+        width: 30vw;
+    }
+
+    .bottom-white-block {
+        width: 45vw;
+    }
+
+    .bottom-white-block .icons {
+        left: 30vw;
+    }
+
+    .bottom-white-block dl {
+        left: 7vw
+    }
+
+    .bottom-white-block button {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 1223px) {
+    .bottom-white-block button {
+        width: 28vw;
+    }
+    
+    .plant-large {
+        width: 400px;
+        top: 100px;
+    
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .plant-large {
+        top: 100px;
+    }
+
+    .bottom-white-block {
+        height: 45dvh;
+        margin: 145px 0px 0px 0px;
+    }
+
+    .bottom-white-block button {
+        top: 30vh;
+        left: 90px;
+    }
+
+    .aside {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 930px) {
+
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        width: 310px;
+    }
+
+    .button-back {
+        display: inline-block;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        width: 32px;
+        height: 25px;
+        border-radius: 21px;
+        background: #498553;
+        z-index: 1;
+        border-width: 0;
+
+    }
+
+    .arrow-left {
+        display: inline-block;
+        position: absolute;
+        top: 3px;
+        left: 8px;
+        z-index: 2;
+    }
+    
+    .plant-large {
+        width: 250px;
+    }
+    
+   
+    
+    .main__header dl {
+        top: 66px;
+        left: 219px;
+    }
+
+    .main__header dt {
+        color: #A1A7A4;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin: 0px 0px 13px 0px;
+    }
+
+    .main__header dd {
+        color: #498553;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin: 0px 0px 24px 0px;
+    }
+
+    .main__header--hide {
+        display: none;
+    }
+
+    .top-green-block {
+        width: 178px;
+        height: 157px;
+        border-radius: 0px 0px 95px 0px;
+    }
+
+    .bottom-white-block {
+        width: 310px;
+        height: 50.6vh;
+        border-radius: 60px 60px 0px 0px;
+    }
+
+    .bottom-white-block dl {
+        top: 70px;
+        left: 20px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .bottom-white-block dl dt {
+        color: #498553;
+        font-size: 16px;
+    }
+
+    .bottom-white-block dl dd {
+        color: #585858;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.25px;
+    }
+
+    .bottom-white-block .icons {
+        display: none;
+    }
+
+    .bottom-white-block .hide-icons{
+        display: inline-block;
+        position: absolute;
+        top: 73px;
+        left: 225px;
+    }
+
+    .fire{
+        width: 17px;
+        height: 17px;
+    }
+
+    .sunrise{ 
+        widows: 19px;
+        height: 18px;
+    }
+
+    .drops{
+        width: 17px;
+        height: 18px;
+    }
+
+    .bottom-white-block button {
+        position: absolute;
+        top: 248px;
+        left: 42px;
+        width: 235px;
+        height: 30.977px;
+    }
+
+    .bottom-white-block button p {
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 8px;
+    }
+
+    .aside {
+        width: 310px;
+        padding: 0px 0px 0px 0px
+    }
+
+    .aside__header input {
+        max-width: 280px;
+
+    }
+
+    .aside__plant-carts {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        width: 310px;
+    }
+
+    .plant-cart{
+        width: 280px;
+        height: 107px;
+        border-radius: 14px;
+    }
+
+    .plant-cart label{
+        width: 280px;
+        height: 107px;
+        border-radius: 14px;
+    }
+
+    .plant-cart .top{
+        width: 86px;
+        height: 76px;
+        border-radius: 14px 0px 95px 0px;        
+    }
+
+    .plant-cart dl {
+        top: 14px;
+        left: 103px;
+    }
+
+    .plant-cart dt {
+        color: #498553;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .plant-cart dd {
+        color: #6A6D6C;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .plant-small {
+        position: absolute;
+        width: 102.355px;
+        height: 93.308px;
+        top: -10px;
+        left: -3px;
+        border: 2px solid red;
+    }
+
+    .plant-cart .fire{
+        position: absolute;
+        top: 83px;
+        left: 193px;
+        z-index: 3;
+    }
+
+    .plant-cart .sunrise{ 
+        position: absolute;
+        top: 83px; 
+        left: 218px;   
+
+        z-index: 3;
+    }
+
+    .plant-cart .drops{
+        position: absolute;
+        top: 83px;
+        left: 244px;
+
+        z-index: 3;
+    }
+}

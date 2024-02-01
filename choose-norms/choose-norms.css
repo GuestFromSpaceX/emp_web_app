@@ -273,6 +273,7 @@ display: none;
     justify-content: space-between;
     align-items: center;
     padding-top: 35px;
+    margin-bottom: 50px;
 }
 
 .title__h2 {
@@ -298,7 +299,8 @@ display: none;
   }
   
   .slider {
-    background-color: #5FAB6C;
+    border-radius: 19px;
+    background: linear-gradient(90deg, #D7EADD -16.07%, #FFF6C3 111.38%);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -306,29 +308,36 @@ display: none;
     right: 0;
     top: 0;
     transition: .4s;
+    width: 95px;
+    height: 41px;
   }
   
   .slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
+    content: url(./media/logo-small.png);
     position: absolute;
+    left: 4px;
     transition: .4s;
-    width: 26px;
+    width: 37px;
+    height: 37px;
+    border-radius: 22px;
+    background: #FBFBFB;
+    margin: 2px;
+    
   }
   
   input:checked + .slider {
-    background-color: #F4E8A6;
+    border-radius: 19px;
+    background: linear-gradient(90deg, #D7EADD -16.07%, #FFF6C3 111.38%);
   }
+
   
   input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(47px);
   }
   
   .slider.round {
     border-radius: 34px;
+
   }
   
   .slider.round:before {
