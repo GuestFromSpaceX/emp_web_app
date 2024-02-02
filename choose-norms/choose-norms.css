@@ -313,7 +313,7 @@ display: none;
   }
   
   .slider:before {
-    content: url(./media/logo-small.png);
+    content: url(./media/logo-small.svg);
     position: absolute;
     left: 4px;
     transition: .4s;
