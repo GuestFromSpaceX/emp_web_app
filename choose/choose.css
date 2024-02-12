@@ -53,8 +53,9 @@ aside > * {
 }
 
 .aside__header {
-    position: relative;
+    position: fixed;
     margin-top: 31px;
+    z-index: 2;
 }
 
 .aside__magnifying-glass {
@@ -82,7 +83,7 @@ aside > * {
 }
 
 .aside__plant-carts {
-    margin-top: 26px;
+    margin-top: 130px;
 }
 
 
@@ -689,4 +690,31 @@ display: none;
 
         z-index: 3;
     }
+}
+
+@media (max-height: 900px) {
+    .top-green-block {
+       height: 30vh;
+    }
+
+    .main__header--hide {
+        display: none;
+    }
+
+    .plant-large {
+        top: 1px; 
+    }
+
+    .bottom-white-block dl {
+        top: 15vh;
+    }
+
+    .bottom-white-block .icons {
+        top: 15vh;
+    }
+
+    .bottom-white-block button {
+        top: 40vh
+    }
+
 }
