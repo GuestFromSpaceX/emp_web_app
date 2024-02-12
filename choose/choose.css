@@ -180,6 +180,7 @@ display: none;
     width: 667px;
     background: #E9F3ED;
     max-height: 100dvh;
+    overflow-y: hidden;
     
 }
 
@@ -243,7 +244,7 @@ display: none;
 .bottom-white-block {
     position: relative;
     width: 667px;
-    height: 556px;
+    height: 100dvh;
     border-radius: 60px 60px 0px 0px;
     background: #FEFEFE;
     margin-top: 145px;
@@ -399,6 +400,11 @@ display: none;
         width: 100vw;
     }
 
+    .aside {
+        display: none;
+        margin: 0px 0px 0px 0px;
+    }
+
     .button-back {
         display: inline-block;
         position: absolute;
@@ -427,18 +433,14 @@ display: none;
     }
 
     .bottom-white-block {
-        height: 45dvh;
         margin: 145px 0px 0px 0px;
     }
 
     .bottom-white-block button {
-        top: 30vh;
+        top: 30dvh;
         left: 90px;
     }
 
-    .aside {
-        margin: 0px 0px 0px 0px;
-    }
 }
 
 @media (max-width: 930px) {
@@ -692,29 +694,12 @@ display: none;
     }
 }
 
-@media (max-height: 900px) {
-    .top-green-block {
-       height: 30vh;
-    }
-
-    .main__header--hide {
-        display: none;
-    }
-
-    .plant-large {
-        top: 1px; 
-    }
-
-    .bottom-white-block dl {
-        top: 15vh;
-    }
-
-    .bottom-white-block .icons {
-        top: 15vh;
-    }
-
+@media (max-height: 900px){
+   
     .bottom-white-block button {
-        top: 40vh
+        top: 40px;
+        left: 300px;
+        width: 20vw;
     }
 
 }
