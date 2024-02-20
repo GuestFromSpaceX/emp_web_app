@@ -10,6 +10,7 @@
 
 html {
     margin: 0px auto;
+    padding: 0px 60px;
     max-width: 1138px;
     background-color: #F8F8F8;
 }
@@ -102,18 +103,27 @@ html {
 /* Headers ^^^*/
 
 .arrows {
-position: absolute;
-display: flex;
-justify-content: space-between;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    width: 100%;
+    top: 280px;
+
 }
 
 .arrow-left {
+    position: relative;
+    /* top: 200px; */
+    left: -60px;
     z-index: 2;
-
-    
 }
 
 .arrow-right {    
+    position: relative;
+    top: -4px;
+    /* top: 196px; */
+    left: 400px; 
     z-index: 2;
     
     transform: rotate(180deg);
@@ -779,6 +789,10 @@ justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
+    html {
+        padding: 0px 0px;
+    }
+    
     .arrows {
         display: none;
     }
